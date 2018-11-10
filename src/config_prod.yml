@@ -9,5 +9,13 @@ db.options:
   user: 'b24p'
   password: ''
 
+сhat.api:
+  webhookUrl: ""
+  apiUrl: ""
+  token: ""
+
+bot:
+  secret: ""
+
 monolog.logfile: "../log/logfile.txt"
 monolog.level: "DEBUG"
