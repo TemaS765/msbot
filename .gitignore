@@ -1,0 +1,8 @@
+.idea
+composer.lock
+vendor
+test.php
+access.log
+error.log
+ngrok
+src/*dev.yml

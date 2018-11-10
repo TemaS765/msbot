@@ -1,0 +1,13 @@
+# Файл настроек для работы в тестовом окружении
+
+debug: true
+
+db.options:
+  driver: ''
+  host: ''
+  dbname: ''
+  user: ''
+  password: ''
+
+monolog.logfile: "../log/logfile.txt"
+monolog.level: "DEBUG"

@@ -1,0 +1,30 @@
+{% extends "standalone_page.twig" %}
+
+{% block page_head %}
+    {{ parent() }}
+    <style type="text/css">
+        #progressbar {
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+{% block page_body %}
+    <div class="container">
+        <h1>Тестовая страница</h1>
+
+        <div class="row">
+            <div class="col col-sm-6">
+                {{ test }}
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
+
+{% block page_bottom %}
+    {{ parent() }}
+{% endblock %}

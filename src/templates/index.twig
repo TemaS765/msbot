@@ -1,0 +1,27 @@
+{% extends "standalone_page.twig" %}
+
+{% block page_head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block page_body %}
+    <div class="container">
+        <h1>{{ app_title }}</h1>
+
+        <p>Кажется, что-то работает.</p>
+
+
+
+    </div>
+
+
+
+{% endblock %}
+
+{% block page_bottom %}
+    {{ parent() }}
+
+    <script src="{{ template_root }}js/vendor/jquery.ui.widget.js"></script>
+
+
+{% endblock %}
