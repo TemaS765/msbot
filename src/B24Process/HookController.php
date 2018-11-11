@@ -21,7 +21,7 @@ class HookController implements ControllerProviderInterface
     public function connect(Application $app) {
         $this->app = $app;
         $controllers = $app['controllers_factory'];
-        $controllers->post('/', array($this, 'indexAction'));
+        $controllers->post('/put', array($this, 'indexAction'));
         $controllers->get('/set', array($this, 'setAction'));
         return $controllers;
     }
@@ -93,7 +93,7 @@ class HookController implements ControllerProviderInterface
     public function setAction(Application $app) {
 
         $client = new Client();
-        $res = $client->request('GET', "https://eu24.chat-api.com/instance15458/webhook?".
+        $res = $client->request('GET', "{$app['chat.api']['apiUrl']}webhook?".
             "webhookUrl={$app['chat.api']['webhookUrl']}&".
         "token={$app['chat.api']['token']}");
         return $res->getBody();

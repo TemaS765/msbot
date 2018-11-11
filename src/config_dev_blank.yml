@@ -9,7 +9,7 @@ db.options:
   user: ''
   password: ''
 
-сhat.api:
+chat.api:
   webhookUrl: ""
   apiUrl: ""
   token: ""
