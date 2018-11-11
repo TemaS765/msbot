@@ -162,7 +162,7 @@ class HookController implements ControllerProviderInterface
         $client = new Client();
         $res = $client->request('POST', "https://directline.botframework.com/v3/directline/conversations",[
             'headers' => [
-                'Authorization' => 'Bearer eHILj_B62Lg.cwA.Fqo.7REDxPMUyz298p2ukx6WgsxqXIqRhdEpC5ukLNyWW_8'
+                'Authorization' => 'Bearer '. $this->app['bot']['secret']
             ]
         ]);
         return json_decode($res->getBody()->getContents(), true);
